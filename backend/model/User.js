@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-// import { required } from "nodemon/lib/config";
 
 const UserSchema = mongoose.Schema({
     name:{
@@ -9,12 +8,10 @@ const UserSchema = mongoose.Schema({
     email:{
         type: "string",
         required: true,
-        unique: true
     },
     address: {
         type : "string",
         required: true,
-        min: 10
     },
     phone: {
         type: "string",
